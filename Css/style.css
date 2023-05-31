@@ -190,7 +190,8 @@ input:focus {
 #generate-options input[type="text"] {
   max-width: 30px;
   text-align: center;
-  border: 1px solid var(--color-red);
+  border: 1px solid var(--color-dark);
+  background-color: var(--color-white);
 }
 
 #generate-options button {
