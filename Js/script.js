@@ -13,7 +13,7 @@ const numbersInput = document.querySelector("#numbers");
 const symbolsInput = document.querySelector("#symbols");
 const copyPasswordButton = document.querySelector("#copy-password");
 
-// Funções para geração/criação das senhas / geração completa com base na tabela do CodeGrepper.
+// Funções para geração/criação das senhas / geração completa com base na tabela do CodeGrepper. 
 const getLetterLowerCase = () => {
   return String.fromCharCode(Math.floor(Math.random() * 26) + 97);
 };
