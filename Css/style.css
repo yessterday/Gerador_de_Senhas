@@ -1,16 +1,16 @@
 :root {
-  --color-dark:   rgb(14, 14, 14);
-  --color-dark2:  rgb(32, 32, 32);
-  --color-dark3:  rgb(22, 22, 22);
-  --color-white:  #fff;
-  --color-green:  rgb(103, 195, 80);
+  --color-dark: rgb(14, 14, 14);
+  --color-dark2: rgb(32, 32, 32);
+  --color-dark3: rgb(22, 22, 22);
+  --color-white: #fff;
+  --color-green: rgb(103, 195, 80);
   --color-green2: rgb(51, 149, 26);
-  --color-red:    rgb(184, 40, 35);
-  --color-red2:   rgb(146, 22, 17);
+  --color-red: rgb(184, 40, 35);
+  --color-red2: rgb(146, 22, 17);
 }
 
 * {
-  font-family:'Poppins';
+  font-family: 'Poppins';
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -25,7 +25,7 @@ body {
 
 html {
   background-color: var(--color-dark);
-    color: var(--color-white);
+  color: var(--color-white);
 }
 
 input:focus {
@@ -37,16 +37,31 @@ input:focus {
   min-height: 80vh;
   margin: 2rem auto;
   display: flex;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
-    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -10px,
+    rgba(0, 0, 0, 0.356) 0px 8px 16px -10px,
+    rgba(103, 195, 80, 0.5) 0px 10px 20px 4px;
 }
 
-#register-banner {
-  background: url("../img/cadeado-fechado-na-seguranca-cibernetica-de-fundo-digital_42077-11084.jpg");
+/*#register-banner {
+  width: 50%;
+}
+
+#register-banner .image-wrapper {
+  background: url("../img/cadeado-fechado-na-seguranca-cibernetica-de-fundo-digital_42077-11728.avif");
+  background-size: cover;
+  background-position: center;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  height: 100%; 
+}
+*/
+ #register-banner {
+  background: url("../img/cadeado-fechado-na-seguranca-cibernetica-de-fundo-digital_42077-11728.avif");
   background-size: cover;
   background-position: center;
   width: 50%;
-}
+  border-radius: 0.5rem;
+} 
 
 #banner-layer {
   padding: 2rem;
@@ -59,6 +74,7 @@ input:focus {
   margin-bottom: 1.6rem;
   color: var(--color-white);
   word-spacing: 50rem;
+
 }
 
 #register-form {
@@ -67,6 +83,12 @@ input:focus {
   width: 50%;
   display: flex;
   flex-direction: column;
+  border-radius: 0.5rem;
+}
+
+#register-form input {
+  border-radius: 0.5rem;
+  background-color: var(--color-dark2);
 }
 
 #register-form h2 {
@@ -112,12 +134,12 @@ input:focus {
 }
 
 #register-form #generated-password {
-  border: 1px solid #0099ff;
-  border-radius: 4px;
+  border: 1px solid var(--color-dark);
+  border-radius: 0.5rem;
   font-weight: bold;
   font-size: 1.2rem;
   padding: 0.4rem;
-  color: var(--color-dark)
+  color: var(--color-dark);
   text-align: center;
   margin-bottom: 1rem;
   display: none;
@@ -147,11 +169,12 @@ input:focus {
   opacity: 1;
 }
 
-/* Segunda versão */
+/*  Segunda versão */
 #generate-options {
   margin-bottom: 1rem;
   padding: 1rem;
-  border: 1px solid var(--color-dark3);
+  border: 1px solid var(--color-dark);
+  border-radius: 0.5rem;
 }
 
 #generate-options .form-control {
@@ -167,11 +190,12 @@ input:focus {
 #generate-options input[type="text"] {
   max-width: 30px;
   text-align: center;
-  border: 1px solid #ccc;
+  border: 1px solid var(--color-red);
 }
 
 #generate-options button {
-  background-color: #0097ff;
+  background-color: var(--color-green2);
+  ;
   display: block;
   margin: 0 auto;
 }
